@@ -1,4 +1,7 @@
 # RoyalRoadLAPI
+Fork HorusPi to keep it running after changes from RR.
+Limited tornado for launching extra clientes
+---- original author readme follows---
 A Python API to request and send data with the fanfiction website RoyalRoadL
 
 To obtain individual data from a fiction, you must first call the get_fiction_object() function if you have a fiction id, or use search_fiction() to get a fiction id. #(to collect all data, refer to bottom)
