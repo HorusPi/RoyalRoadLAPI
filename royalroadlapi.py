@@ -541,7 +541,7 @@ def get_chapters(chapter_links,directory_loc="Fictions/"): #create a loop object
     chapters_downloaded = [] #reset the downloaded chapters
     chapters_html = {} #reset the chapter list and html
     fiction_html = "" #reset the fiction html
-    http_client = httpclient.AsyncHTTPClient(force_instance=True,defaults=dict(user_agent="Mozilla/5.0"),max_clients=20) #initiate the async http loop
+    http_client = httpclient.AsyncHTTPClient(force_instance=True,defaults=dict(user_agent="Mozilla/5.0"),max_clients=1) #changed as RR no longer admits parallel query
     for chapter_id in chapter_links: #for each chapter in chapter links
         global i #access the global variable i
         i += 1 #add one to it
